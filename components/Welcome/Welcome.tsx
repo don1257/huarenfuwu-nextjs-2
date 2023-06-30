@@ -26,7 +26,7 @@ export function Welcome() {
         {/*</Anchor>*/}
         {/*. To get started edit index.tsx file.*/}
       </Text>
-        <h2 className={classes.sponsors} align="center">Sponsors</h2>
+        <h2 className={classes.sponsors}>Sponsors</h2>
         <div className={classes.blog}>
             <WelcomeBlogCard />
             <WelcomeBlogCard />

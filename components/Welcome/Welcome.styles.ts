@@ -13,6 +13,7 @@ export default createStyles((theme) => ({
   },
   sponsors: {
     display: 'grid',
+    textAlign: 'center',
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontSize: 35,
     fontWeight: 900,
