@@ -1,4 +1,4 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text } from '@mantine/core';
 import useStyles from './Welcome.styles';
 import { WelcomeBlogCard } from '../WelcomeBlogCards/WelcomeBlogCard';
 
@@ -7,7 +7,7 @@ export function Welcome() {
 
   return (
     <>
-      <Title className={classes.title} align="center">
+      <Title className={classes.title}>
           {' '}
         <Text inherit variant="gradient" component="span">
             华人服务中心欢迎您

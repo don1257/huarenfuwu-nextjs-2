@@ -6,14 +6,13 @@ export default createStyles((theme) => ({
     fontSize: 100,
     fontWeight: 900,
     letterSpacing: -2,
-
+    textAlign: 'center',
     [theme.fn.smallerThan('md')]: {
       fontSize: 50,
     },
   },
   sponsors: {
     display: 'grid',
-    textAlign: 'center',
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontSize: 35,
     fontWeight: 900,
