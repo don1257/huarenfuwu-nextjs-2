@@ -1,4 +1,4 @@
-import { Header, Menu, Group, Center, Burger, Container, Image } from '@mantine/core';
+import { Header, Menu, Group, Center, Burger, Container, Image, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import useStyles from './Header.styles';
@@ -50,10 +50,10 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
 
     return (
         // <Header height={56} className={classes.header} mb={120}>
-        <Header height={102} className={classes.header} mb={120}>
+        <Header height={102} className={classes.header} mb={0}>
             <Container>
                 <div className={classes.inner}>
-                    {/*<MantineLogo size={28} inverted />*/}
+                    <Burger />
                     <Image width={100} height={100} src="https://res.cloudinary.com/pory/image/upload/v1676403074/production/public/63e03b6f25e6cd00089f000d/huarenfuwu-logo.png" alt="Random image" />
                     <Group spacing={5} className={classes.links}>
                         {items}
@@ -63,8 +63,12 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
                       onClick={toggle}
                       className={classes.burger}
                       size="sm"
-                      color="#fff"
+                      color="fe6734"
                     />
+                    <Group className={classes.hiddenMobile}>
+                        <Button variant="default">免费发布信息</Button>
+                        <Button>捐款</Button>
+                    </Group>
                 </div>
             </Container>
         </Header>

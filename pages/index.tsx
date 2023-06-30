@@ -38,7 +38,6 @@ export default function HomePage() {
     <>
       <HeaderMenuColored links={HeaderLink} />
       <Welcome />
-      <ColorSchemeToggle />
     </>
   );
 }
