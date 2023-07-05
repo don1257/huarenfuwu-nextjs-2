@@ -56,8 +56,19 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
                         {items}
                     </Group>
                     <Group>
-                        <Button variant="default">免费发布信息</Button>
-                        <Button>捐款</Button>
+                        <Button
+                          variant="default"
+                          component="a"
+                          href="https://www.google.com"
+                        >
+                            免费发布信息
+                        </Button>
+                        <Button
+                          component="a"
+                          href="/donate"
+                        >
+                            捐款
+                        </Button>
                     </Group>
                 </div>
         </Header>
