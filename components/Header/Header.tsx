@@ -51,7 +51,14 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
         <Header height={102} mb={0}>
                 <div className={classes.inner}>
                     <BurgerMenu />
-                    <Image width={100} height={100} src="https://res.cloudinary.com/pory/image/upload/v1676403074/production/public/63e03b6f25e6cd00089f000d/huarenfuwu-logo.png" alt="Random image" />
+                    <Image
+                      href="/"
+                      component="a"
+                      width={100}
+                      height={100}
+                      src="https://res.cloudinary.com/pory/image/upload/v1676403074/production/public/63e03b6f25e6cd00089f000d/huarenfuwu-logo.png"
+                      alt="华人服务中心"
+                    />
                     <Group spacing={5} className={classes.links}>
                         {items}
                     </Group>
