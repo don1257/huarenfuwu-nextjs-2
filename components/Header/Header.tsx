@@ -1,16 +1,13 @@
-import { Header, Menu, Group, Center, Burger, Container, Image, Button } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { Header, Menu, Group, Center, Container, Image, Button } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
 import useStyles from './Header.styles';
-import {HeaderMegaMenu} from "../MegaMenu/MegaMenu";
-import BurgerMenu from "../Burger/Burger";
+import BurgerMenu from '../Burger/Burger';
 
 interface HeaderSearchProps {
     links: { link: string; label: string; links: { link: string; label: string }[] }[];
 }
 
 export function HeaderMenuColored({ links }: HeaderSearchProps) {
-    const [opened, { toggle }] = useDisclosure(false);
     const { classes } = useStyles();
 
     const items = links.map((link) => {
@@ -51,7 +48,6 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
     });
 
     return (
-        // <Header height={56} className={classes.header} mb={120}>
         <Header height={102} mb={0}>
             <Container>
                 <div className={classes.inner}>
