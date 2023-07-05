@@ -2,6 +2,8 @@ import { Header, Menu, Group, Center, Burger, Container, Image, Button } from '@
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import useStyles from './Header.styles';
+import {HeaderMegaMenu} from "../MegaMenu/MegaMenu";
+import BurgerMenu from "../Burger/Burger";
 
 interface HeaderSearchProps {
     links: { link: string; label: string; links: { link: string; label: string }[] }[];
@@ -53,18 +55,11 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
         <Header height={102} mb={0}>
             <Container>
                 <div className={classes.inner}>
-                    <Burger opened />
+                    <BurgerMenu />
                     <Image width={100} height={100} src="https://res.cloudinary.com/pory/image/upload/v1676403074/production/public/63e03b6f25e6cd00089f000d/huarenfuwu-logo.png" alt="Random image" />
                     <Group spacing={5} className={classes.links}>
                         {items}
                     </Group>
-                    <Burger
-                      opened={opened}
-                      onClick={toggle}
-                      className={classes.burger}
-                      size="sm"
-                      color="fe6734"
-                    />
                     <Group>
                         <Button variant="default">免费发布信息</Button>
                         <Button>捐款</Button>
