@@ -1,4 +1,5 @@
 import { HeaderMenuColored } from '../Header/Header';
+import {Container} from "@mantine/core";
 
 export default function Layout({ children }) {
     const HeaderLink = [
@@ -35,9 +36,12 @@ export default function Layout({ children }) {
     return (
         <>
 
+            <Container size="xl">
+
             <HeaderMenuColored links={HeaderLink} />
             <main>{children}</main>
 
+            </Container>
         </>
     );
 }
